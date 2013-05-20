@@ -10,11 +10,15 @@ Additionally it can force the opening of the owning project file before opening 
 Usage:
 
 Add carbon.framework to your project
+
 Add DFSWRevealLineInXcode.h and DFSWRevealLineInXcode.h
 
+
+```
 #import "DFSWRevealLineInXcode.h"
 
 -(void)myMethod
-{
+{	
 	[DFSWRevealLineInXcode openFileInXcode:(NSString *)projectPath atLine:(int)1 launchProject:(BOOL)openPorjectFirst];
 }
+```
