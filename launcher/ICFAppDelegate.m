@@ -6,7 +6,8 @@
 //  Copyright (c) 2013 Kyle Richter. All rights reserved.
 //
 
-#import "ICFAppDelegate.h"
+#import "ICFAppDelegate.h"  
+#import "DFSWRevealLineInXcode.h"
 
 @implementation ICFAppDelegate
 
@@ -15,9 +16,15 @@
     [super dealloc];
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (IBAction)go:(id)sender
 {
-    // Insert code here to initialize your application
+    
+    BOOL openProject = NO;
+    
+    if([self.openProjectFile state] == NSOnState)
+        openProject = YES;
+    
+    [DFSWRevealLineInXcode openFileInXcode:self.filepathTextField.stringValue atLine:[self.lineNumberTextField.stringValue intValue] launchProject:openProject];
 }
 
 @end

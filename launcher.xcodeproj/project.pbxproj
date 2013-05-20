@@ -13,6 +13,8 @@
 		27780C3817473F5D00FA722B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27780C3617473F5D00FA722B /* Credits.rtf */; };
 		27780C3B17473F5D00FA722B /* ICFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27780C3A17473F5D00FA722B /* ICFAppDelegate.m */; };
 		27780C3E17473F5D00FA722B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27780C3C17473F5D00FA722B /* MainMenu.xib */; };
+		27D464D3174A7DA800462352 /* DFSWRevealLineInXcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D464D2174A7DA800462352 /* DFSWRevealLineInXcode.m */; };
+		27EB2EF3174A91CF00B76AA3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EB2EF2174A91CF00B76AA3 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		27780C3917473F5D00FA722B /* ICFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICFAppDelegate.h; sourceTree = "<group>"; };
 		27780C3A17473F5D00FA722B /* ICFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICFAppDelegate.m; sourceTree = "<group>"; };
 		27780C3D17473F5D00FA722B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27D464D1174A7DA800462352 /* DFSWRevealLineInXcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSWRevealLineInXcode.h; sourceTree = "<group>"; };
+		27D464D2174A7DA800462352 /* DFSWRevealLineInXcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSWRevealLineInXcode.m; sourceTree = "<group>"; };
+		27EB2EF2174A91CF00B76AA3 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EB2EF3174A91CF00B76AA3 /* Carbon.framework in Frameworks */,
 				27780C2817473F5D00FA722B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +69,7 @@
 		27780C2617473F5D00FA722B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27EB2EF2174A91CF00B76AA3 /* Carbon.framework */,
 				27780C2717473F5D00FA722B /* Cocoa.framework */,
 				27780C2917473F5D00FA722B /* Other Frameworks */,
 			);
@@ -84,6 +91,8 @@
 			children = (
 				27780C3917473F5D00FA722B /* ICFAppDelegate.h */,
 				27780C3A17473F5D00FA722B /* ICFAppDelegate.m */,
+				27D464D1174A7DA800462352 /* DFSWRevealLineInXcode.h */,
+				27D464D2174A7DA800462352 /* DFSWRevealLineInXcode.m */,
 				27780C3C17473F5D00FA722B /* MainMenu.xib */,
 				27780C2E17473F5D00FA722B /* Supporting Files */,
 			);
@@ -169,6 +178,7 @@
 			files = (
 				27780C3417473F5D00FA722B /* main.m in Sources */,
 				27780C3B17473F5D00FA722B /* ICFAppDelegate.m in Sources */,
+				27D464D3174A7DA800462352 /* DFSWRevealLineInXcode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +312,7 @@
 				27780C4317473F5D00FA722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
